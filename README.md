@@ -1,3 +1,14 @@
+
+# LDF Notes
+
+This code was forked from a public repo. The library supports several IMU chipsets. 
+
+The two things you need that are not in the library are:
+* install QTCreator in order to easily make the library. The link showing that is here: http://jetsonhacks.com/2015/04/22/install-qt-creator-on-nvidia-jetson-tk1/. I (Larry) also have years of QTCreator experience so I can help with that if necessary.
+* Wire up the Adafruit IMU to the Jetson GPIO socket. The link showing that is here: http://jetsonhacks.com/2015/04/23/inertial-measurement-unit-imu-part-ii/. Note that the picture is actually wrong! and you have to pay attention to the pinout labels to do this right. We are using the 3.3v connection.
+#
+
+
 # RTIMULib - a versatile C++ and Python 9-dof, 10-dof and 11-dof IMU library
 
 RTIMULib is the simplest way to connect a 9-dof, 10-dof or 11-dof IMU to an embedded Linux system and obtain quaternion or Euler angle pose data. Basically, two simple function calls (IMUInit() and IMURead()) are pretty much all that's needed to integrate RTIMULib.
